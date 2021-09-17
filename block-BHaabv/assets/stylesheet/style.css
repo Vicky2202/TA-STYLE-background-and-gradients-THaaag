@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Customs Style */
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Roboto" sans-serif;
+    background-color: #1D2029;
+    color: #ffffff;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+/* Header */
+.header {
+    padding: 40px 0;
+    background-color: #20222F;
+    padding-bottom: 180px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+}
+.header h1 {
+    font-size: 44px;
+    text-transform: capitalize;
+}
+.header h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #7d7d8a;
+}
+.btn-container span {
+  font-size: 20px;
+  color: #7d7d8a;
+}
+.btn {
+    width: 56px;
+    height: 28px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #3AB0BD,#3EC999);
+    margin-left: 6px;
+    padding-left: 4px;
+}
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #262A47;
+}
+
+/* Cards */
+.main {
+    margin-top: 140px;
+}
+.card-conatiner {
+    padding: 60px;
+}
+.card {
+    width: 23%;
+    background-color: #252B43;
+    padding: 32px;
+    text-align: center;
+    color: #7d7d8a;
+    position: relative;
+    border-radius: 6px;
+}
+.card a{
+    margin-right: 8px;
+    color: #188FF5;
+}
+.card h2 {
+    font-size: 68px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1;
+}
+.card-body {
+    padding: 20px 0;
+}
+.card-text{
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 300;
+    line-height: 1;
+}
+.card .up-arrow {
+    color: #3EC999;
+}
+.card-footer a {
+   margin-right: 4px;
+   width: 10px;
+}
+.card-footer span {
+    color: #3EC999;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.border-top {
+    width: 100%;
+    height: 4px;
+     background-color: #188FF5;    
+     position: absolute;
+     left: 0;
+     right:0;
+     top: 0;
+     border-top-right-radius: 6px;
+     border-top-left-radius: 6px;
+}
+
+.card-twitter .border-top {
+    background-color: #287AB3;
+}
+.card-twitter .twitter-logo {
+    color: #287AB3;
+}
+
+.card-insta .border-top {
+    background: linear-gradient(to right, #B08A67 , #be4976);
+}
+.card-insta .insta-logo {
+    color: #be4976
+}
+
+.card-youtube .border-top {
+    background-color: red;
+}
+.card-youtube .youtube-logo {
+    color: red;
+}
+.card-youtube .down-arrow {
+    color: #e84242;
+}
+.card-youtube span {
+    color: #e84242;
+}
+/* Overview */
+.overview {
+  margin-bottom: 80px;
+}
+.overview h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.overview-card {
+    margin-top: 32px;
+}
+.overview-card .card-header {
+    margin-bottom: 30px;
+}
+.overview-card h3{
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+}
+.overview-card span {
+    font-size: 12px;
+    color: #3EC999;
+}
+.overview-card .up-arrow {
+    width: 12px;
+    margin-right: 3px;
+}
+.overview-card .down-arrow {
+    width: 12px;
+    margin-right: 3px;
+}
+.card .twitter-logo {
+    color: #287AB3;
+}
+.card .insta-logo {
+    color: #be4976;
+}
+.card .youtube-logo {
+    color: red;
+}
+.card .down-arrow {
+    color: #e84242;
+}
+.card .down-prcnt {
+    color:  #e84242;
+}
